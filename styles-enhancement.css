@@ -1,0 +1,58 @@
+:root {
+  --spotify-green: #1db954;
+  --footer-height: 40px;
+  --bg: #181818;
+  --muted: #898989;
+}
+
+/* Fix drag regions: allow only container header/side to be draggable if needed */
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Active row */
+.playlist-songs table tr.is-active {
+  background: rgba(29, 185, 84, 0.12);
+}
+
+.playlist-songs table tr {
+  transition: background-color 120ms ease;
+}
+
+/* Active icons */
+.footer-player-middle-buttons img.is-active {
+  filter: none !important;
+}
+
+/* Like icon styling */
+.footer-player-left-like img.is-liked {
+  filter: none !important;
+}
+
+/* Progress slider better look */
+.footer-player-middle .player-slider input {
+  appearance: none;
+}
+
+.footer-player-middle .player-slider input::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+/* Expand/collapse playlist */
+.menu.playlists .playlist-toggle {
+  margin-top: 10px;
+  margin-left: 6px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #cacaca;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.menu.playlists ul li.is-collapsed {
+  display: none;
+}
+
